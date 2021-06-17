@@ -1,0 +1,21 @@
+Package: xby2library
+Title: Utilities to integrate with DQF
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Samarjit",
+           family = "Ray Choudhury",
+           role = c("aut", "cre"),
+           email = "schoudhury@xby2.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Utilities to integrate with DQF
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+        license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9001
+NeedsCompilation: no
+Packaged: 2021-06-07 21:21:01 UTC; schoudhury
+Author: Samarjit Ray Choudhury [aut, cre] (YOUR-ORCID-ID)
+Maintainer: Samarjit Ray Choudhury <schoudhury@xby2.com>
+Built: R 4.0.5; ; 2021-06-07 21:21:02 UTC; windows

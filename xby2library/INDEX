@@ -1,0 +1,5 @@
+getDbConnection         Function to get database connection from a json
+                        connection string
+persistValidationResults
+                        Function to persist validation results
+                        dataframe to S3 as a CSV file
