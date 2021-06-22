@@ -1,5 +1,7 @@
-getDbConnection         Function to get database connection from a json
-                        connection string
+captureSkipTest         Function to capture skip tests
+getDbConnection         Function to get database connection from aws
+                        secret id containing database credentials
+                        Supports Postgres and Athena
 persistValidationResults
                         Function to persist validation results
                         dataframe to S3 as a CSV file

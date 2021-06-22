@@ -1,28 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Function to persist validation results dataframe to S3 as a...</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Function to capture skip tests</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body>
 
-<table width="100%" summary="page for persistValidationResults {xby2library}"><tr><td>persistValidationResults {xby2library}</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table width="100%" summary="page for captureSkipTest {xby2library}"><tr><td>captureSkipTest {xby2library}</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Function to persist validation results dataframe to S3 as a CSV file</h2>
+<h2>Function to capture skip tests</h2>
 
 <h3>Description</h3>
 
-<p>Function to persist validation results dataframe to S3 as a CSV file
+<p>Function to capture skip tests
 </p>
 
 
 <h3>Usage</h3>
 
 <pre>
-persistValidationResults(
+captureSkipTest(
   executionId,
   queue_name,
-  bucket_name,
   table_name,
   function_name,
-  df
+  error_msg,
+  stack_trace
 )
 </pre>
 
@@ -38,10 +38,6 @@ persistValidationResults(
 <td>
 <p>Queue name for validation status notification</p>
 </td></tr>
-<tr valign="top"><td><code>bucket_name</code></td>
-<td>
-<p>Bucket name where validation results will be stored</p>
-</td></tr>
 <tr valign="top"><td><code>table_name</code></td>
 <td>
 <p>Database table name</p>
@@ -50,9 +46,13 @@ persistValidationResults(
 <td>
 <p>Validation routine name or identifier</p>
 </td></tr>
-<tr valign="top"><td><code>df</code></td>
+<tr valign="top"><td><code>error_msg</code></td>
 <td>
-<p>Dataframe to persist</p>
+<p>error message or summary</p>
+</td></tr>
+<tr valign="top"><td><code>stack_trace</code></td>
+<td>
+<p>exception stack trace</p>
 </td></tr>
 </table>
 
@@ -60,7 +60,7 @@ persistValidationResults(
 <h3>Examples</h3>
 
 <pre>
-persistValidationResults()
+captureSkipTest()
 </pre>
 
 <hr /><div style="text-align: center;">[Package <em>xby2library</em> version 0.0.0.1 <a href="00Index.html">Index</a>]</div>
